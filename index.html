@@ -61,7 +61,8 @@
             </div>
           </div>
           <label for="input">How many pizzas?</label>
-          <input id="userInput" type="number">
+
+          <input id="userInput" type="number" min="1" step="1" data-bind="value:replyNumber">
           <button type="submit" class="btn">Order!</button>
         </form>
       </div>
