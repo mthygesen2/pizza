@@ -33,13 +33,3 @@ $(document).ready(function() {
     $(".priceOutcome").show();
   });
 });
-// Pizza.prototype.pizzaTopppingsPrice = function() {
-//   var numberToppings = this.toppings;
-//   var toppingPrice = 1 * numberToppings.length;
-//   return toppingPrice;
-// };
-//
-// Pizza.prototype.pizzaFullPrice = function() {
-//   var onePizzaPrice = sizePrice + toppingPrice
-//   return onePizzaPrice * this.howMany
-// };

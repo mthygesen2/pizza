@@ -3,66 +3,57 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <title>Pizza Order</title>
   </head>
   <body>
     <div class="container">
-      <h1>Poppin' Pizza</h1>
+      <div class="jumbotron">
+        <h1>Poppin' Pizza</h1>
+        <p>Pizza for the whole family.</p>
+      </div>
       <div id = "pizzaOrder">
-      <form>
-        <h4>What size of Pizza would you like?</h4>
-        <div class="row">
-          <div class="col-md-4">
-            <label for="small">
+        <form>
+          <div class="well">
+            <h4>What size of Pizza would you like?</h4>
+            <label class="radio-inline" for="small">
               <input type="radio" id="small" value="small" name="size">
               Small
             </label>
-          </div>
-          <div class="col-md-4">
-            <label for="medium">
+            <label class="radio-inline" for="medium">
               <input type="radio" id="medium" value="medium" name="size">
               Medium
             </label>
-          </div>
-          <div class="col-md-4">
-            <label for="large">
+            <label class="radio-inline" for="large">
               <input type="radio" id="large" value="large" name="size">
               Large
             </label>
           </div>
-        </div>
-          <h4>How about those toppings?</h4>
-          <div class="row">
-            <div class="col-md-3">
-              <label for="cheese">
-                <input type="checkbox" id="cheese" value="1" name="toppings">
-                EXTRA cheese
-              </label>
-            </div>
-            <div class="col-md-3">
-              <label for="mushrooms">
-                <input type="checkbox" id="mushrooms" value="1" name="toppings">
-                Mushrooms
-              </label>
-            </div>
-            <div class="col-md-3">
-              <label for="olives">
-                <input type="checkbox" id="olives" value="1" name="toppings">
-                Olives
-              </label>
-            </div>
-            <div class="col-md-3">
-              <label for="bacon">
-                <input type="checkbox" id="bacon" value="1" name="toppings">
-                Bacon
-              </label>
-            </div>
+          <div class="well">
+            <h4>How about those toppings?</h4>
+            <label class="checkbox-inline" for="cheese">
+              <input type="checkbox" id="cheese" value="1" name="toppings">
+              EXTRA cheese
+            </label>
+            <label class="checkbox-inline" for="mushrooms">
+              <input type="checkbox" id="mushrooms" value="1" name="toppings">
+              Mushrooms
+            </label>
+            <label class="checkbox-inline" for="olives">
+              <input type="checkbox" id="olives" value="1" name="toppings">
+              Olives
+            </label>
+            <label class="checkbox-inline" for="bacon">
+              <input type="checkbox" id="bacon" value="1" name="toppings">
+              Bacon
+            </label>
           </div>
-          <label for="input">How many pizzas?</label>
-
-          <input id="userInput" type="number" min="1" step="1" data-bind="value:replyNumber">
+          <div class="well">
+            <label for="input">How many pizzas?</label>
+            <input id="userInput" type="number" min="1" step="1" data-bind="value:replyNumber">
+          </div>
           <button type="submit" class="btn">Order!</button>
         </form>
       </div>

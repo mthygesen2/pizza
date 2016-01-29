@@ -1,3 +1,9 @@
 .priceOutcome {
   display: none;
 }
+h1 {
+  font-family: 'Bree Serif', serif;
+}
+.container {
+  align-content: center;
+}
