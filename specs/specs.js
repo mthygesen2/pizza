@@ -13,6 +13,8 @@ describe("Pizza", function() {
     var testPizza = new Pizza("small", 1, 1);
     expect(testPizza.pizzaFullPrice()).to.equal(6);
   });
+});
+
   // it("will return the price of the toppings on the pizza", function(){
   //   var testPizza = new Pizza("medium", 2, ["mushrooms", "olives"]);
   //   expect(testPizza.pizzaTopppingsPrice()).to.equal(2);
@@ -21,4 +23,3 @@ describe("Pizza", function() {
   //   var testPizza = new Pizza("medium", 2, ["mushrooms", "olives"]);
   //   expect(testPizza.pizzaFullPrice()).to.equal(20);
   // });
-});

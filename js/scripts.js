@@ -20,6 +20,12 @@ Pizza.prototype.pizzaFullPrice = function() {
   return onePizzaPrice * this.howMany
 };
 
+function resetFields() {
+  $('input[name=size]').attr('checked',false);
+  $('input[name=toppings]').attr('checked',false);
+  $('#userInput').val("");
+}
+
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
@@ -31,5 +37,7 @@ $(document).ready(function() {
 
     $(".priceShow").text(newOrder.pizzaFullPrice());
     $("#priceOutcome").show();
+
+    resetFields();
   });
 });
