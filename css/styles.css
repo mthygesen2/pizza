@@ -18,11 +18,12 @@ body {
 }
 .well {
   background-color: #ffffe2 !important;
+  font-family: 'Raleway', sans-serif;
 }
 #pizzaOrder h4 {
   color: 	#ce0000;
   font-size: 20px;
-  font-family: 'Raleway', sans-serif;
+
 }
 #priceOutcome {
   color: #dba24a;
@@ -38,4 +39,8 @@ body {
 .glyphicon {
     font-size: 200%;
     color: #d25555;
+}
+#iconP p {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
 }
