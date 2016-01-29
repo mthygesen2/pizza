@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <title>Pizza Order</title>
@@ -55,11 +56,26 @@
             <label for="input">How many pizzas?</label>
             <input id="userInput" type="number" min="1" step="1" data-bind="value:replyNumber">
           </div>
-          <button type="submit" class="btn">Order!</button>
+          <button type="submit" class="btn">Pizza Price</button>
         </form>
       </div>
       <div id="priceOutcome" class="well">
-        <p>Your pizza will be $<span class="priceShow"></span></p>
+        <p>Your pizza will be $<span class="priceShow"></span><br>Remember to tip your pizza driver!</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+          <p>(503) 123-4567</p>
+        </div>
+        <div class="col-md-4">
+          <a href="https://www.facebook.com/Dominos">
+          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></a>
+          <p>Like us on FaceBook! <br>Look out for great deals and coupons!</p>
+        </div>
+        <div class="col-md-4">
+          <a href="https://twitter.com/dominos"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span></a>
+          <p>Tweet at us!</p>
+        </div>
       </div>
     </div>
   </body>

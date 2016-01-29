@@ -1,15 +1,37 @@
 #priceOutcome {
   display: none;
 }
-h1 {
-  font-family: 'Bree Serif', serif;
-}
 body {
   background-color: 	#fffa8a;
 }
 .jumbotron h1 {
   color: 	#ce0000;
+  font-family: 'Bree Serif', serif;
+  font-size: 50px;
+}
+.jumbotron p {
+  font-family: 'Raleway', sans-serif;
+}
+.jumbotron img {
+  width: auto;
 }
 #pizzaOrder h4 {
   color: 	#ce0000;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+#priceOutcome {
+  color: #dba24a;
+  font-weight: bolder;
+  font-family: 'Bree Serif', serif;
+  font-size: 25px;
+  margin-top: 3%;
+}
+.row {
+  margin: 2px;
+  padding-top: 5%;
+}
+.glyphicon {
+    font-size: 200%;
+    color: #1aa130;
 }
