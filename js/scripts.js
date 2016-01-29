@@ -4,7 +4,7 @@ function Pizza(pizzaSize, howMany, toppings) {
   this.toppings = toppings;
 }
 
-Pizza.prototype.pizzaSizePrice = function () {
+Pizza.prototype.pizzaSizePrice = function() {
   var price = 5
   if(this.pizzaSize === "medium") {
     var sizePrice = (price + 3);
@@ -15,3 +15,9 @@ Pizza.prototype.pizzaSizePrice = function () {
   }
   return sizePrice;
 };
+
+Pizza.prototype.pizzaTopppingsPrice = function() {
+  var numberToppings = this.toppings;
+  var toppingPrice = 1 * numberToppings.length;
+  return toppingPrice;
+  }
