@@ -16,53 +16,57 @@
         <div class="row">
           <div class="col-md-4">
             <label for="small">
-              <input type="radio" id="size" value="small" name="with">
+              <input type="radio" id="small" value="small" name="size">
               Small
             </label>
           </div>
           <div class="col-md-4">
             <label for="medium">
-              <input type="radio" id="medium" value="medium" name="with">
+              <input type="radio" id="medium" value="medium" name="size">
               Medium
             </label>
           </div>
           <div class="col-md-4">
             <label for="large">
-              <input type="radio" id="large" value="large" name="with">
+              <input type="radio" id="large" value="large" name="size">
               Large
             </label>
           </div>
-
+        </div>
           <h4>How about those toppings?</h4>
           <div class="row">
             <div class="col-md-3">
               <label for="cheese">
-                <input type="checkbox" id="cheese" value="cheese" name="with">
+                <input type="checkbox" id="cheese" value="1" name="toppings">
                 EXTRA cheese
               </label>
             </div>
             <div class="col-md-3">
               <label for="mushrooms">
-                <input type="checkbox" id="mushrooms" value="mushrooms" name="with">
+                <input type="checkbox" id="mushrooms" value="1" name="toppings">
                 Mushrooms
               </label>
             </div>
             <div class="col-md-3">
               <label for="olives">
-                <input type="checkbox" id="olives" value="olives" name="with">
+                <input type="checkbox" id="olives" value="1" name="toppings">
                 Olives
               </label>
             </div>
             <div class="col-md-3">
               <label for="bacon">
-                <input type="checkbox" id="bacon" value="bacon" name="with">
+                <input type="checkbox" id="bacon" value="1" name="toppings">
                 Bacon
               </label>
             </div>
           </div>
           <label for="input">How many pizzas?</label>
           <input id="userInput" type="number">
+          <button type="submit" class="btn">Order!</button>
         </form>
+      </div>
+      <div>
+        <p class=priceOutcome>Your pizza will be $<span class="priceShow"></span></p>
       </div>
     </div>
   </body>
