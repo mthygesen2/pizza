@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Order</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Poppin' Pizza</h1>
+      <div id = "pizzaOrder">
+      <form>
+        <h4>What size of Pizza would you like?</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <label for="small">
+              <input type="radio" id="size" value="small" name="with">
+              Small
+            </label>
+          </div>
+          <div class="col-md-4">
+            <label for="medium">
+              <input type="radio" id="medium" value="medium" name="with">
+              Medium
+            </label>
+          </div>
+          <div class="col-md-4">
+            <label for="large">
+              <input type="radio" id="large" value="large" name="with">
+              Large
+            </label>
+          </div>
+
+          <h4>How about those toppings?</h4>
+          <div class="row">
+            <div class="col-md-3">
+              <label for="cheese">
+                <input type="checkbox" id="cheese" value="cheese" name="with">
+                EXTRA cheese
+              </label>
+            </div>
+            <div class="col-md-3">
+              <label for="mushrooms">
+                <input type="checkbox" id="mushrooms" value="mushrooms" name="with">
+                Mushrooms
+              </label>
+            </div>
+            <div class="col-md-3">
+              <label for="olives">
+                <input type="checkbox" id="olives" value="olives" name="with">
+                Olives
+              </label>
+            </div>
+            <div class="col-md-3">
+              <label for="bacon">
+                <input type="checkbox" id="bacon" value="bacon" name="with">
+                Bacon
+              </label>
+            </div>
+          </div>
+          <label for="input">How many pizzas?</label>
+          <input id="userInput" type="number">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

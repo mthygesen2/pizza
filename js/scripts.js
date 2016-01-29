@@ -4,11 +4,11 @@ function Pizza(pizzaSize, howMany, toppings) {
   this.toppings = toppings;
 }
 
-Pizza.prototype.pizzaSizePrice = function() {
+Pizza.prototype.pizzaFullPrice = function() {
   var price = 5
   var numberToppings = this.toppings;
   var toppingPrice = 1 * numberToppings.length;
-  
+
   if(this.pizzaSize === "medium") {
     var sizePrice = (price + 3);
   } else if(this.pizzaSize === "large") {

@@ -5,9 +5,9 @@ describe("Pizza", function() {
     expect(testPizza.howMany).to.equal(2);
     expect(testPizza.toppings).to.eql(["mushrooms", "olives"])
   });
-  it("will return the price of the pizza for the size", function() {
+  it("will return the price of the full pizza order", function() {
     var testPizza = new Pizza("medium", 2, ["mushrooms", "olives"]);
-    expect(testPizza.pizzaSizePrice()).to.equal(20);
+    expect(testPizza.pizzaFullPrice()).to.equal(20);
   });
   // it("will return the price of the toppings on the pizza", function(){
   //   var testPizza = new Pizza("medium", 2, ["mushrooms", "olives"]);
