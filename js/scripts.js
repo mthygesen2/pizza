@@ -25,6 +25,7 @@ Pizza.prototype.pizzaFullPrice = function() {
 function resetFields() {
   $('input[name=size]').attr('checked',false);
   $('input[name=toppings]').attr('checked',false);
+  $('input[name=fancy]').attr('checked',false);
   $('#userInput').val("");
 }
 
@@ -34,8 +35,9 @@ $(document).ready(function() {
 
     var inputSize = $('input[name=size]:checked').val();
     var inputToppings = $('input[name=toppings]:checked').length;
+    var inputFancy = $('input[name=fancy]:checked').length;
     var inputHowMany = $('#userInput').val();
-    var newOrder = new Pizza (inputSize, inputHowMany, inputToppings);
+    var newOrder = new Pizza (inputSize, inputHowMany, inputToppings, inputFancy);
 
     $(".priceShow").text(newOrder.pizzaFullPrice());
     $("#priceOutcome").show();
