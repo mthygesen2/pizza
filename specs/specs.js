@@ -7,10 +7,14 @@ describe("Pizza", function() {
   });
   it("will return the price of the pizza for the size", function() {
     var testPizza = new Pizza("medium", 2, ["mushrooms", "olives"]);
-    expect(testPizza.pizzaSizePrice()).to.equal(8);
+    expect(testPizza.pizzaSizePrice()).to.equal(20);
   });
-  it("will return the price of the toppings on the pizza", function(){
-    var testPizza = new Pizza("medium", 2, ["mushrooms", "olives"]);
-    expect(testPizza.pizzaTopppingsPrice()).to.equal(2);
-  });
+  // it("will return the price of the toppings on the pizza", function(){
+  //   var testPizza = new Pizza("medium", 2, ["mushrooms", "olives"]);
+  //   expect(testPizza.pizzaTopppingsPrice()).to.equal(2);
+  // });
+  // it("will return the price of all the pizzas", function() {
+  //   var testPizza = new Pizza("medium", 2, ["mushrooms", "olives"]);
+  //   expect(testPizza.pizzaFullPrice()).to.equal(20);
+  // });
 });

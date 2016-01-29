@@ -6,6 +6,9 @@ function Pizza(pizzaSize, howMany, toppings) {
 
 Pizza.prototype.pizzaSizePrice = function() {
   var price = 5
+  var numberToppings = this.toppings;
+  var toppingPrice = 1 * numberToppings.length;
+  
   if(this.pizzaSize === "medium") {
     var sizePrice = (price + 3);
   } else if(this.pizzaSize === "large") {
@@ -13,11 +16,17 @@ Pizza.prototype.pizzaSizePrice = function() {
   } else {
     var sizePrice = price;
   }
-  return sizePrice;
+  var onePizzaPrice = sizePrice + toppingPrice
+  return onePizzaPrice * this.howMany
 };
 
-Pizza.prototype.pizzaTopppingsPrice = function() {
-  var numberToppings = this.toppings;
-  var toppingPrice = 1 * numberToppings.length;
-  return toppingPrice;
-  }
+// Pizza.prototype.pizzaTopppingsPrice = function() {
+//   var numberToppings = this.toppings;
+//   var toppingPrice = 1 * numberToppings.length;
+//   return toppingPrice;
+// };
+//
+// Pizza.prototype.pizzaFullPrice = function() {
+//   var onePizzaPrice = sizePrice + toppingPrice
+//   return onePizzaPrice * this.howMany
+// };
