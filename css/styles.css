@@ -12,8 +12,12 @@ body {
 .jumbotron p {
   font-family: 'Raleway', sans-serif;
 }
-.jumbotron img {
-  width: auto;
+.jumbotron {
+  margin-top: 2%;
+  background-color: #ffffe2 !important;
+}
+.well {
+  background-color: #ffffe2 !important;
 }
 #pizzaOrder h4 {
   color: 	#ce0000;
