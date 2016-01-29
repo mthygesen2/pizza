@@ -30,6 +30,6 @@ $(document).ready(function() {
     var newOrder = new Pizza (inputSize, inputHowMany, inputToppings);
 
     $(".priceShow").text(newOrder.pizzaFullPrice());
-    $(".priceOutcome").show();
+    $("#priceOutcome").show();
   });
 });

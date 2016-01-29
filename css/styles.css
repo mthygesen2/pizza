@@ -1,9 +1,15 @@
-.priceOutcome {
+#priceOutcome {
   display: none;
 }
 h1 {
   font-family: 'Bree Serif', serif;
 }
-.container {
-  align-content: center;
+body {
+  background-color: 	#fffa8a;
+}
+.jumbotron h1 {
+  color: 	#ce0000;
+}
+#pizzaOrder h4 {
+  color: 	#ce0000;
 }
