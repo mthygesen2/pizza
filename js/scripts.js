@@ -19,7 +19,7 @@ Pizza.prototype.pizzaFullPrice = function() {
     var sizePrice = price;
   }
   var onePizzaPrice = sizePrice + toppingPrice + fancyPrice;
-  return onePizzaPrice * this.howMany
+  return onePizzaPrice * this.howMany;
 };
 
 function resetFields() {
